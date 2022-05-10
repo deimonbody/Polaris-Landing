@@ -1,0 +1,38 @@
+@mixin  font($font_name,$file_name,$weight,$style) {
+    @font-face {
+        font-family: $font_name;
+        src: url("../fonts/#{$file_name}.woff"),url("../fonts/#{$file_name}.woff2") format("woff2"); 
+        font-display: swap;
+        font-weight: #{$weight};
+        font-style:#{$style};
+    }
+}
+body{
+    font-size:14px;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+.container,.container-md,.container-xl{
+    @media screen and (min-width:1400px) {
+        max-width: 1140px !important;
+    }
+}
+@import "fonts";
+
+@import "./colors.scss";
+@import "./firstScreen.scss";
+@import "./about.scss";
+@import "./abilites.scss";
+@import "./services.scss";
+@import "./text.scss";
+@import "./registration.scss";
+@import "./guarantee.scss";
+@import "./stages.scss";
+@import "./form.scss";
+@import "./based.scss";
+@import "./about-team.scss";
+@import "./partners.scss";
+@import "./contacts.scss";
+@import "./footer.scss";

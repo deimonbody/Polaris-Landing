@@ -1,0 +1,17 @@
+.footer{
+    
+    background-color:#F0F8FF;
+}
+.footer__nav-link{
+    color:#1F1F1F;
+    font-size: 15px;
+    padding-left: 0 !important;
+    @media screen and (max-width:767px) {
+        padding-left: 10px !important;
+    }
+}
+.footer__container{
+    border-top: 1px solid #1F1F1F;
+    padding-top:60px;
+    padding-bottom: 60px;
+}

@@ -1,0 +1,122 @@
+
+.main-photo{
+    background-image: url('../img/01.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.consult{
+    position: relative;
+    &::before{
+        width:2px;
+        background-color: #FFFF;
+        height:440%;
+        position: absolute;
+        top:-50px;
+        left:0;
+        display:block;
+        content: "";
+    }
+
+    &__btn{
+        width:30px; 
+        height:30px;
+        cursor: pointer;
+        background-color: #FFFF;
+        top:0px;
+        left:-14px;
+        transition: all .3s ease-in-out;
+        &:hover{
+            background-color: rgb(216, 215, 215);
+        }
+        svg{
+            width:15px;
+            height:15px;
+        }
+    }
+    
+}
+.navbar-toggler{
+    &:focus{
+        box-shadow: none !important;
+    }
+}
+.navbar-toggler-icon{
+    
+    svg{
+     fill:#FFFF;
+     width:80%;
+     height:80%;      
+    }
+}
+
+
+
+.burger-list-active{
+    position:absolute;
+    display: flex !important;
+    top:87px;
+    left:0;
+    background-color: #3b47b2;;
+    width:100%;
+    z-index: 1000;
+    .nav-link{
+        color:white !important;
+    }
+    .navbar-nav{
+        width:100%;
+        text-align: center;
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,0.075);
+    }
+    .nav-item{
+        box-shadow: 0;
+        transition: all .3s linear;
+    }
+    .nav-item:hover{
+        box-shadow: 0px 0px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    }   
+
+}
+
+.navbar{
+    border-bottom:1px solid #ffff;
+}
+
+.first-screen__content{
+    font-size:3rem; 
+    @media screen and (max-width:992px) {
+        font-size:2rem; 
+    }
+    @media screen and (max-width:767px) {
+        font-size:1.4rem;
+    }  
+}
+
+.first-screen__btn{
+    span{
+        width: 20px;
+        height:20px;
+        svg{
+            width:100%;
+            height: 100%;
+            fill:#FFFF;
+        }
+    }
+    background-color: #3B47B2;
+    border-radius: 81px;
+    padding:24px 30px ;
+    transition: all .3s ease-in;
+    &:hover{
+        background-color: #283074;
+    }
+    @media screen and (max-width:767px) {
+        padding:14px 20px;
+    }
+}
+.first-screen{
+    padding-top: 200px;
+    @media screen and (max-width:767px) {
+        padding-top: 60px;
+    }
+}
